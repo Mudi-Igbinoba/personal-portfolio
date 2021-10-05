@@ -1,0 +1,120 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+/* Sidebar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #000;
+    position: fixed;
+    width: 100vw;
+}
+
+.brand {
+    margin: 0;
+    margin-top: 5px;
+    color: white;
+    padding: 10px 15px;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: hsl(0, 0%, 7%);
+    overflow-x: hidden;
+    padding-top: 20px;
+    transition: 0.6s;
+    opacity: 0.9;
+}
+
+#sidebar a {
+    padding: 8px 32px 8px 8px;
+    text-decoration: none;
+    color: #818181;
+    font-size: 1.3em;
+    transition: 0.3s;
+    text-align: center;
+    
+}
+
+#sidebar a:hover {
+    color: #f1f1f1;
+}
+
+
+#sidebar .closebtn {
+    position: relative;
+    top: 0;
+    /* left: 25px; */
+    font-size: 25px;
+    text-align: center;
+    /* margin-left: 50px; */
+}
+
+.openbtn {
+    cursor: pointer;
+    color: white;
+    /* z-index: 1; */
+    align-self: center;
+    margin-top: 5px;
+    padding: 10px 25px;
+}
+
+.openbtn:hover {
+    color: #444;
+}
+
+#home {
+    background-color: purple;
+    height: 100vh;
+}
+
+#about {
+    background-color: pink;
+    height: 400px;
+}
+
+/* Media Queries */
+/* Sidebar */
+@media only screen and (min-width: 600px) {
+
+    #sidebar {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        width: 100%;
+        position: relative;
+        z-index: 0;
+        top: initial;
+        right: initial;
+        background-color: inherit;
+        overflow-x: auto;
+        padding: 10px 15px;
+        opacity: 1;
+    }
+
+    #sidebar a {
+        font-size: 1.1em; 
+    }
+
+    #sidebar .closebtn {
+        display: none;
+    }
+
+    #menu i {
+        display: none;
+    }
+}
