@@ -5,6 +5,10 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.15.4/css/all.css">
     
     <link rel="icon" type="image/png" sizes="76x76" href="assets/images/scorpio(10).png">
@@ -17,32 +21,89 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <h1 class="brand">Mudee</h1>
+    
+    <nav class=" navbar nav navbar-expand-lg nav-justified justify-content-evenly  bg-dark">
+        <div class="container-fluid">
+            <h1 class="navbar-brand text-light">Mudee</h1>
 
-            <div id="menu">
-                <i class="fas fa-bars fa-lg openbtn" onclick="openNav()"></i>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars fa-inverse"></i></span>
+            </button>
 
-                <div id="sidebar">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
-                    
-                    <a href="#home" onclick="closeBar()">Home</a>
-                    <a href="#about" onclick="closeBar()">About</a>
-                    <a href="#skills" onclick="closeBar()">Skills</a>
-                    <a href="#experience" onclick="closeBar()">Experience</a>
-                    <a href="#projects" onclick="closeBar()">Projects</a>
+            <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvas" aria-labelledby="offcanvas">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close btn-close-white mx-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body justify-content-end">
+                    <a href="#home" class="link-light fs-5 nav-link text-center">Home</a>
+                
+                    <a href="#about" class="link-light fs-5 nav-link text-center">About</a>
+            
+                    <a href="#skills" class="link-light fs-5 nav-link text-center">Skills</a>
+            
+                    <a href="#experience" class="link-light fs-5 nav-link text-center">Experience</a>
+
+                    <a href="#projects" class="link-light fs-5 nav-link text-center">Projects</a>
                 </div>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+    
 
     <section id="home" >
+        <div class="intro">
+            <div class="bar"></div>
+            <h2>Hi! I'm Mudee...</h2>
+            <img src="assets/images/20211005_080956.png" alt="">
+        </div>
 
+        <div class="bio">
+            <div>
+                <h5>Name</h5>
+                <p>Osamudiame Ruth Igbinoba</p>
+            </div> 
+
+            <div>
+                    <h5>Role</h5>
+                    <p>Front End Web Developer</p>
+            </div>
+           
+            <div>
+                <h5>Email</h5>
+                <p><a class="bio-link" href="mailto:ruth.igbinoba12@gmail.com">ruth.igbinoba12@gmail.com</a></p>
+            </div>
+
+            <div>
+                <h5>Phone</h5>
+                <p><a class="bio-link" href="tel:+2349017827061">+2349017827061</a></p>
+            </div>
+
+            <div>
+                <h5>Location</h5>
+                <p>Lagos, Nigeria</p>
+            </div>
+
+            <div>
+                <h5>Interests</h5>
+                <p>Music, Books, Movies, Series</p>
+            </div>
+            
+            <div class="social">
+                <h5>Social</h5>
+                <div id="social-icons">
+                    <a href="https://www.twitter.com/mudi_igbinoba"><img src="assets/images/twitter-sign.png" alt=""></a>
+                    <a href="https://www.linkedin/in/ruth-igbinoba-485a1a182"><img src="assets/images/linkedin.png" alt=""></a>
+                    <a href="https://github.com/Mudi-Igbinoba"><img src="assets/images/github.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="about" >
-
+        <h2>About Me</h2>
+        <p>I'm a learner of all things tech who's passionate</p>
+        <a href="#">Resume</a>
     </section>
     <script src="script.js"></script>
 </body>
