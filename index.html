@@ -30,7 +30,7 @@
                 <span class="navbar-toggler-icon"><i class="fas fa-bars fa-inverse"></i></span>
             </button>
 
-            <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvas" aria-labelledby="offcanvas">
+            <div class="offcanvas offcanvas-end w-100" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvas" aria-labelledby="offcanvas">
                 <div class="offcanvas-header">
                     <button type="button" class="btn-close btn-close-white mx-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
@@ -55,10 +55,10 @@
         <div class="intro">
             <div class="bar"></div>
             <h2>Hi! I'm Mudee...</h2>
-            <img src="assets/images/20211005_080956.png" alt="">
+            <img class="shadow-sm" src="assets/images/20211005_080956.png" alt="">
         </div>
 
-        <div class="bio">
+        <div class="bio shadow">
             <div>
                 <h5>Name</h5>
                 <p>Osamudiame Ruth Igbinoba</p>
@@ -101,9 +101,111 @@
     </section>
 
     <section id="about" >
-        <h2>About Me</h2>
-        <p>I'm a learner of all things tech who's passionate</p>
-        <a href="#">Resume</a>
+        <div class="about-img">
+            <img class="shadow-lg" src="assets/images/3946714.jpg" alt="">
+        </div>
+
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>I'm a learner of all things tech who's passionate about building world-class responsive and interactive web apps and sites. I have a speciality in front end web development with knowledge of necessary programming languages and design tools like Canva.</p>
+            <a href="#" class="shadow">Resume <i class="fas fa-external-link-alt"></i></a>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <div class="row row-cols-1 row-cols-lg-5 g-4 g-md-5 g-lg-3">
+            <div class="col">
+                <div class="card shadow bg-light text-dark border-light">
+                    <div class="card-header  text-center">HTML</div>
+
+                    <div class="card-body bg-light">
+                        <img src="assets/images/html5.svg" alt="" class="html-img card-img-bottom img-fluid bg-light">
+                    </div> 
+
+                    <div class="card-footer">
+                        <div class="progress bg-secondary">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated html-progress text-center" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                                <span class="progress-value">95%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow bg-light text-dark border-light">
+                    <div class="card-header text-center">CSS</div>
+
+                    <div class="card-body bg-light">
+                        <img src="assets/images/css.svg" alt="" class="css-img card-img-bottom img-fluid bg-light">
+                    </div>
+
+                    <div class="card-footer">
+                        <div class="progress bg-secondary">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated css-progress" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                <span class="progress-value">90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow bg-light text-dark border-light">
+                    <div class="card-header text-center">Bootstrap</div>
+
+                    <div class="card-body bg-light">
+                        <img src="assets/images/bootstrap(2).svg" alt="" class="bootstrap-img card-img-bottom img-fluid bg-light">
+                    </div>   
+
+                    <div class="card-footer">
+                        <div class="progress bg-secondary">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bootstrap-progress" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                <span class="progress-value">80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow bg-light text-dark border-light">
+                    <div class="card-header text-center">JavaScript</div>
+
+                    <div class="card-body bg-light">
+                        <img src="assets/images/javascript.svg" alt="" class="javascript-img card-img-bottom img-fluid bg-light">
+                    </div>   
+
+                    <div class="card-footer">
+                        <div class="progress bg-secondary">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated javascript-progress" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                <span class="progress-value">70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow bg-light text-dark border-light">
+                    <div class="card-header text-center">Canva</div>
+
+                    <div class="card-body bg-light">
+                        <img src="assets/images/canva.svg" alt="" class="canva-img card-img-bottom img-fluid bg-light">
+                    </div>   
+
+                    <div class="card-footer">
+                        <div class="progress bg-secondary">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated canva-progress" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                <span class="progress-value">50%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <script src="script.js"></script>
 </body>

@@ -43,7 +43,7 @@ html, body {
     position: relative;
     display: block;
     margin: auto;
-    box-shadow: 0px 3px 5px 3px #574949;
+    /* box-shadow: 0px 3px 5px 3px #574949; */
     background-color: #594378;
     margin-top: 20px;
 }
@@ -57,11 +57,16 @@ html, body {
     bottom: 100px;
     z-index: 0;
     border-radius: 10px;
-    box-shadow: 0px 3px 5px #65547e;
+    /* box-shadow: 0px 3px 5px #65547e; */
 }
 
 .bio div {
     padding: 20px 0px;
+}
+
+.bio div h5 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 .bio a {
@@ -79,6 +84,107 @@ html, body {
     padding-right: 4px;
 }
 /* About */
+#about {
+    padding: 30px;
+    background-color: #594378;
+    padding-bottom: 50px;
+}
+
+.about-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-text h2 {
+    font-size: 2em;
+    color: #fff;
+    padding-top: 15px;
+    text-transform: uppercase;
+}
+
+.about-text p {
+    color: #e1b7bf;
+    padding-top: 10px;
+    position: relative;
+}
+
+.about-text a {
+    position: relative;
+    text-decoration: none;
+    background-color: #c262fa;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    border-radius: 8px;
+    padding: 15px 30px;
+    top: 15px;
+}
+
+.about-text a:hover {
+    background-color: #fff;
+    color: #c262fa;
+}
+
+/* Skills */
+#skills {
+    background-color: #c262fa;
+    padding: 30px;
+}
+
+#skills h2 {
+    padding: 15px 0px;
+}
+
+.row {
+    padding-top: 20px;
+}
+
+.card {
+    width: 75%;
+    height: 100%;
+    margin: auto;
+}
+
+.card-img-bottom {
+    height: 200px;
+}
+
+.progress {
+    height: 20px;
+    text-align: center;
+}
+
+.progress-bar {
+    background-color: #c262fa;
+}
+
+.progress-value {
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+.html-progress{
+    width: 95%;
+}
+
+.css-progress{
+    width: 90%;
+}
+
+.bootstrap-progress{
+    width: 80%;
+}
+
+.javascript-progress{
+    width: 70%;
+}
+
+.canva-progress{
+    width: 50%;
+}
+
+
 /* Media queries */
 /* Tab View */
 @media only screen and (min-width: 600px){
@@ -103,6 +209,23 @@ html, body {
         grid-column: span 2;
         margin: auto;
     }
+
+    /* About */
+    .about-img img {
+        width: 70%;
+        border-radius: 100%;
+    }
+
+    .about-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .about-text a {
+        max-width: fit-content;
+    }
+
 }
 
 @media only screen and (min-width: 992px){
@@ -125,13 +248,42 @@ html, body {
         width: 50%;
         padding: 20px;
     }
- /*
-    .bio div {
-        padding: 10px 0px;
+ 
+    /* About */
+    #about {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+     .about-img {
+        width: 50%;
+
+    }
+    
+    .about-text {
+        width: 50%;
+        align-self: center;
     }
 
-    .social {
-        grid-column: span 2;
+     /* Skills */
+     .card {
+        width: 100%;
         margin: auto;
+    }
+    
+    .card-img-bottom {
+        height: 200px;
+    }
+}
+
+/* Large Desktop view */
+@media only screen and (min-width:1400px) {
+    /* About */
+    .about-img {
+        width: 40%;
+    }
+
+    /* .about-img img {
+        border-radius: 100%;
     } */
 }
