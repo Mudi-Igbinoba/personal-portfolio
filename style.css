@@ -184,6 +184,43 @@ html, body {
     width: 50%;
 }
 
+/* Experience */
+#experience {
+    background-color: #e1b7bf;
+    padding: 30px;
+    color: #59437a;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: #59437a;
+    margin-top: 50px;
+}
+
+.date {
+    padding-top: 25px;
+}
+
+#experience a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background-color: #c262af;
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    display: block;
+    text-align: center;
+    width: 80%;
+    padding: 20px 30px;
+    border-radius: 8px;
+}
+
+#experience a:hover {
+    background-color: #59437a;
+}
 
 /* Media queries */
 /* Tab View */
@@ -226,6 +263,20 @@ html, body {
         max-width: fit-content;
     }
 
+/* Experience */
+#experience {
+    padding: 50px;
+}
+
+.detail {
+    padding-left: 50px;
+}
+
+#experience a {
+    margin-top: 70px;
+    width: 50%;
+    padding: 20px 30px;
+}
 }
 
 @media only screen and (min-width: 992px){
@@ -273,6 +324,32 @@ html, body {
     
     .card-img-bottom {
         height: 200px;
+    }
+
+    /* Experience */
+    #experience h2 {
+        text-align: center;
+    }
+
+    .detail {
+        padding-left: 0px;
+        padding-top: 25px;
+    }
+
+    #experience a {
+        width: 25%;
+    }
+
+    .exp {
+        display: grid;
+        margin: auto;
+        width: 70%;
+        grid-template-columns: 50% 50%;
+        gap: 0px -50px;
+    }
+
+    .line {
+        grid-column: span 2;
     }
 }
 
