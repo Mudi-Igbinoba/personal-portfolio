@@ -488,6 +488,9 @@ footer a:hover {
     color: #000;
 }
 
+embed {
+    object-fit: cover;
+}
 
 /* Media queries */
 /* Tab View */
